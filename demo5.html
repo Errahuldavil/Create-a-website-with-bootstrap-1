@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        .animation1 {
+            animation: anim1 3s 1 alternate-reverse;
+        }
+
+        @keyframes anim1 {
+            0% {
+                font-size: 41px;
+            }
+
+            100% {
+                font-size: 80px;
+            }
+        }
+
+        .animation2 {
+            animation: anim2 3s 3s 1;
+        }
+
+        @keyframes anim2 {
+            0% {
+                transform: perspective(2000px)rotateY(0deg);
+                box-shadow: 0px 2px 15px 2px blue;
+
+            }
+
+            100% {
+                transform: perspective(2000px)rotateY(360deg);
+
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+
+        .u1 ul li {
+            display: inline-block;
+            height: 30px;
+            width: 100px;
+            line-height: 30px;
+            text-align: center;
+            transform: translateY(10px);
+            /* border: 1px solid black; */
+            color: white;
+            font-weight: bold;
+            /* background-color: black; */
+            transition: all 2s;
+            list-style: none;
+        }
+
+        .u1 ul li:hover {
+            background-color: white;
+            color: black;
+            border-radius: 5px;
+
+        }
+
+        .slider {
+            background-image: url(images/city5.webp);
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+
+        .rg {
+
+            background: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <div style="height: 80px;background-color: black;" class="row">
+        <div class="col-sm-5 border border-black ">
+            <span class="text-light" style="font-size: 40px;padding-left: 80px;font-weight: bold;">AX</span>
+            <span class="a2" style="font-size: 40px;color:orangered;font-weight: bold;">IT</span>
+        </div>
+        <div class="col-sm-7 border border-black u1">
+            <ul>
+                <a href="#">
+                    <li>Features</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Pricing</li>
+                </a>
+                <a href="#">
+                    <li>Reviwes</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+            </ul>
+        </div>
+        <div style="height: 400px;" class="row">
+            <div class="col-sm-12 border border-black slider">
+                <div style="height: 400px;" class="rg">
+                    <div style="height: 100%;" class="row">
+                        <div class="col-sm-6 ">
+                            <div style="padding-left: 80px;">
+                                <span class="animation1"
+                                    style="font-size: 40px;font-weight: bold;color: WHITE;">AX</span>
+                                <span class="animation1"
+                                    style="font-size: 40px;color:orangered;font-weight: bold;">IT</span>
+                                <br>
+                                <span class="fs-3 text-white ">MODERN AXURE TEMPLATE </span><br>
+                                <span class="fs-3 text-white ">FOR BEATIFUL PROTOTYPES</span>
+                                <br><br>
+                                <p style="border-bottom: 2px solid white;width: 40px;"></p>
+                                <br>
+                                <b style="font-size: 10px;color: white;">Lorem, ipsum dolor sit amet consectetur
+                                    adipisicing elit. Error aperiam nostrum
+                                    consequatur cumque nisi odio modi! Adipisci nesciunt, expedita ipsa labore impedit
+                                    consectetur, sunt itaque aperiam, repudiandae commodi explicabo laboriosam!</b>
+                                <br><br>
+                                <input class="animation2" value="Download" style="width: 100px;height: 40px;"
+                                    class="btn border border-white text-white" type="submit">
+                            </div>
+                        </div>
+                        <div class="col-sm-6 anim1 ">
+                            <div style=" height: 320px;width: 70%;margin: 40px auto;" class="row">
+                                <div style="border-radius: 5px;" class="col-sm-12 border border-white">
+                                    <div style="height: 35px;" class="row">
+                                        <div style="border-radius: 5px; text-align: center;line-height: 25px;color: white;"
+                                            class="col-sm-12 border border-white">
+                                            <b>Try Your</b> <b style="color: orangered;">FREE</b> <b>Trial Today</b>
+                                        </div>
+                                        <div style="min-height: 293px;" class="row">
+                                            <div class="col-sm-12">
+                                                <input placeholder="Enter your name"
+                                                    style="border-bottom: 1px solid gray;color: white;"
+                                                    class="btn  w-75 ms-5 mt-2" type="text">
+                                                <input placeholder="Enter your Password"
+                                                    style="border-bottom: 1px solid gray;color: white;"
+                                                    class="btn  w-75 ms-5 mt-2" type="text">
+                                                <br>
+                                                <br>
+                                                <input placeholder="Enter your Password"
+                                                    style="border: 1px solid white; color: white;"
+                                                    class="btn  w-75 ms-5 mt-2" type="submit">
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 70px;" class="row">
+            <div class="col-sm-5 ">
+                <div style="padding-left:100px;">
+                    <b>Social Media</b><br>
+                    <span style="font-size: 12px;"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+                        consequatur eos porro doloremque
+                        provident quos? </span>
+                </div>
+            </div>
+            <div class="col-sm-7 ">
+                <div style="line-height: 70px;">
+                    <img style="margin-left: 50px;" src="logo/comments.png" alt="">
+                    <img style="margin-left: 50px;" src="logo/hiring.png" alt="">
+                    <img style="margin-left: 50px;" src="logo/home-button.png" alt="">
+                    <img style="margin-left: 50px;" src="logo/office.png" alt="">
+                    <img style="margin-left: 50px;" src="logo/telephone.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div style="top: 0px;" class="row">
+            <div style="height: 350px;" class="col-sm-12 ">
+                <div style="height: 350px;" class="row">
+                    <div class="col-sm-7 ">
+                        <div style="height: 15%;" class="row">
+                            <div class="col-12 "></div>
+                        </div>
+                        <div style="height: 70%;" class="row">
+                            <div class="col-12 ">
+
+                                <div style="height: 100%;" class="row">
+                                    <div class="col-sm-2 "></div>
+                                    <div class="col-sm-1 ">
+                                        <div style="height: 33.3%;" class="row">
+                                            <div style="background-color: orangered;line-height: 60px;color: white;"
+                                                class="col-sm-12  ">TAB1</div>
+                                        </div>
+                                        <div style="height: 33.3%;" class="row">
+                                            <div style="background-color: black;line-height: 60px;color: white;"
+                                                class="col-sm-12  ">TAB1</div>
+                                        </div>
+                                        <div style="height: 33.3%;" class="row">
+                                            <div style="background-color: black;line-height: 60px;color: white;"
+                                                class="col-sm-12  ">TAB1</div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col-sm-9 ">
+                                        <div style="padding-left: 30px;">
+                                            <b>Tabs with soft transitional effect.</b>
+                                            <br>
+                                            <span style="font-size: 12px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
+                                                obcaecati eveniet, qui pariatur deleniti consequuntur inventore.
+                                                Architecto atque, voluptatem voluptas eveniet</span>
+                                            <br><br>
+                                            <span style="font-size: 12px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ut
+                                                expedita qua</span>
+                                                <br>
+                                                <br>
+                                                <input class="btn border-dark" style="background-color: orangered; color: white;" value="Download" type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div style="height: 15%;" class="row">
+                            <div class="col-12"></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-5">
+                        <div style="height: 15%;" class="row">
+                            <div  class="col-sm-12"></div>
+                        </div>
+                        <div style="height: 65%;" class="row">
+                            <div  class="col-sm-12 ">
+                                <img style="height: 250px;margin-left: 80px;" src="images/shadow building.png" alt="">
+                            </div>
+                        </div>
+                        <div style="height: 20%;" class="row">
+                            <div  class="col-sm-12"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
